@@ -79,10 +79,80 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 4. Include screenshots of your test coverage reports
 5. Demonstrate debugging techniques in your code
 
+# Bug Tracker Application
+
+This project implements a Bug Tracker application as part of the Testing and Debugging MERN Applications assignment.
+
+## Features
+
+- Create new bug reports
+- View list of reported bugs
+- Update bug status
+- Delete bug reports
+
+## Project Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   cd mern-bug-tracker
+   npm install
+   cd client
+   npm install
+   cd ../server
+   npm install
+   ```
+3. Configure environment variables:
+   - Create `.env` in server directory
+   - Add MongoDB connection string
+   - Set PORT and other configurations
+
+## Testing Strategy
+
+### Backend Tests
+- Unit tests for bug validation logic
+- Integration tests for CRUD operations
+- API endpoint testing using Supertest
+- Database operations using MongoDB Memory Server
+
+### Frontend Tests
+- Component rendering tests
+- Form validation tests
+- API integration tests
+- Error boundary tests
+
+## Running Tests
+
+```bash
+# Run backend tests
+cd server
+npm test
+
+# Run frontend tests
+cd client
+npm test
+
+# Run E2E tests
+npm run test:e2e
+```
+
+## Debugging Techniques
+
+1. Server-side debugging:
+   - Using Node.js inspector
+   - Winston logger implementation
+   - Error middleware stack traces
+
+2. Client-side debugging:
+   - React DevTools
+   - Network request monitoring
+   - Error Boundaries
+   - Console logging strategies
+
 ## Resources
 
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 - [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro/)
 - [Supertest Documentation](https://github.com/visionmedia/supertest)
 - [Cypress Documentation](https://docs.cypress.io/)
-- [MongoDB Testing Best Practices](https://www.mongodb.com/blog/post/mongodb-testing-best-practices) 
+- [MongoDB Testing Best Practices](https://www.mongodb.com/blog/post/mongodb-testing-best-practices)
